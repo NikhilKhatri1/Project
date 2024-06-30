@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 3.5rem;
+
+    /* =====color===== */
+    --bg-color: hsl(211, 93, 52);
+    --first-color: hsl(253, 52%, 53%);
+    --first-color-dark: hsl(256, 81%, 45%);
+    --first-color-light: hsl(251, 78%, 73%);
+    --title-color: hsl(0, 0%, 87%);
+    --text-color: hsl(0, 0%, 69%);
+    --body-color: hsl(200, 12%, 5%);
+    --container-color: hsl(200, 10%, 8%);
+    --border-color: hsl(0, 0%, 20%);
+    --white: #fff;
+
+    /* =========font and typography============== */
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 1.5rem;
+    --larger-font-size: 1.2rem;
+    --large-font-size: 1.125rem;
+
+    /* ====== font-weight====== */
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-600: 600;
+    --weight-800: 800;
+}
+
+/* ======== body ======== */
+body {
+    background-image: url("./public/images/loginBg.png");
+    /* background-color: var(--bg-color); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======= Login Container ========== */
+
+.container {
+    height: 80%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-container {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.158);
+    /* backdrop-filter: blur(50px); */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.684);
+}
+
+/* ======= Login Heading ======== */
+.login-heading {
+    font-size: var(--h2-font-size);
+    font-weight: var(--weight-800);
+}
+
+/* ======= first Column ======== */
+.col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.319);
+    backdrop-filter: blur(30px);
+    border-radius: 4.3% 30% 20% 4.3%;
+    transition: border-radius 0.3s;
+    /* border: 1px solid black; */
+    color: var(--first-color);
+    position: relative;
+}
+
+.image1 {
+    position: absolute;
+    top: -61px;
+    left: 172px;
+    width: 300px;
+    height: 300px;
+}
+
+.image2 {
+    position: absolute;
+    top: 57%;
+    right: 51px;
+    transform: translate(0, -50%);
+    width: 200px;
+    height: 200px;
+}
+
+.image3 {
+    position: absolute;
+    bottom: 31px;
+    right: 151px;
+    width: 300px;
+    height: 200px;
+}
+
+
+/* ===== Second Column ===== */
+.col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30% 4.3% 4.3% 20%;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+    /* border: 1px solid black; */
+    color: var(--white);
+}
+
+/* =======button ======== */
+.btn-color {
+    color: var(--first-color-dark);
+    background-color: var(--border-color);
+}
+
+.btn-color:hover {
+    border: 1px solid var(--border-color);
+    color: white;
+}
+
+/* ====== Login btn a======= */
+.btn-color a {
+    text-decoration: none;
+    color: var(--first-color-dark);
+}
+
+/* =====forgetpass===== */
+.forget-pass h6 a {
+    color: white;
+    text-decoration: none;
+}
+
+.forget-pass h6 a:hover {
+    color: var(--first-color-dark);
+    text-decoration: underline;
+}
+
+/* ======== for Mobile ========== */
+
+@media (max-width: 450px) {
+    body {
+        background-image: url("./public/images/loginBgsm.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    /* ====== login container ======== */
+
+    .row-container {
+        background-color: rgba(255, 255, 255, 0.473);
+        backdrop-filter: none;
+    }
+
+    .container {
+        height: 85%;
+        width: 95%;
+    }
+
+    /* ======= Login Heading ======== */
+    .login-heading {
+        font-size: var(--h2-font-size);
+        font-weight: 700;
+    }
+
+    /* ========login input and btn======= */
+
+    .col-1 {
+        border-radius: 2.3% 2.3% 40% 40%;
+        height: 100px;
+        color: var(--first-color-dark)
+    }
+
+    .col-2 {
+        color: var(--first-color-dark);
+        border-radius: 0% 0% 4.3% 4.3%;
+        height: calc(100% - 150px);
+        /* border: 1px solid black; */
+        backdrop-filter: none;
+        margin-top: -1px;
+    }
+
+    /* =====forgetpass===== */
+    .forget-pass h6 a {
+        color: var(--first-color-dark);
+        text-decoration: none;
+    }
+
+    .forget-pass h6 a:hover {
+        color: var(--container-color);
+        text-decoration: underline;
+    }
+
+    .image1 {
+        position: absolute;
+        top: -115px;
+        left: 144px;
+        width: 300px;
+        /* Adjust size as needed */
+        height: 200px;
+        /* Adjust size as needed */
+    }
+
+    .image2 {
+        position: absolute;
+        top: 74px;
+        right: 21px;
+        transform: translate(0, -50%);
+        width: 150px;
+        /* Adjust size as needed */
+        height: 150px;
+        /* Adjust size as needed */
+    }
+
+    .image3 {
+        position: absolute;
+        bottom: -26px;
+        right: 207px;
+        width: 150px;
+        height: 150px;
+    }
+
+}
