@@ -61,10 +61,11 @@ body {
 
 .container {
     height: 80%;
-    width: 70%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 60%;
 }
 
 .row-container {
@@ -74,7 +75,11 @@ body {
     background-color: rgba(255, 255, 255, 0.158);
     /* backdrop-filter: blur(50px); */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.684);
+    display: flex;
+    justify-content: center;
 }
+
+
 
 /* ======= Login Heading ======== */
 .login-heading {
@@ -82,49 +87,10 @@ body {
     font-weight: var(--weight-800);
 }
 
-/* ======= first Column ======== */
-.col-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.319);
-    backdrop-filter: blur(30px);
-    border-radius: 4.3% 30% 20% 4.3%;
-    transition: border-radius 0.3s;
-    /* border: 1px solid black; */
-    color: var(--first-color);
-    position: relative;
-}
-
-.image1 {
-    position: absolute;
-    top: -61px;
-    left: 172px;
-    width: 300px;
-    height: 300px;
-}
-
-.image2 {
-    position: absolute;
-    top: 57%;
-    right: 51px;
-    transform: translate(0, -50%);
-    width: 200px;
-    height: 200px;
-}
-
-.image3 {
-    position: absolute;
-    bottom: 31px;
-    right: 151px;
-    width: 300px;
-    height: 200px;
-}
-
-
 /* ===== Second Column ===== */
 .col-2 {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +116,12 @@ body {
 /* ====== Login btn a======= */
 .btn-color a {
     text-decoration: none;
-    color: var(--first-color-dark);
+    color: var(--white);
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 /* =====forgetpass===== */
@@ -193,6 +164,7 @@ body {
     .container {
         height: 76%;
         width: 95%;
+        margin-left: 10px;
     }
 
     /* ======= Login Heading ======== */
@@ -202,13 +174,6 @@ body {
     }
 
     /* ========login input and btn======= */
-
-    .col-1 {
-        border-radius: 2.3% 2.3% 40% 40%;
-        height: 100px;
-        color: var(--first-color-dark)
-    }
-
     .col-2 {
         color: var(--first-color-dark);
         border-radius: 0% 0% 4.3% 4.3%;
@@ -229,33 +194,5 @@ body {
         text-decoration: underline;
     }
 
-    .image1 {
-        position: absolute;
-        top: -115px;
-        left: 144px;
-        width: 300px;
-        /* Adjust size as needed */
-        height: 200px;
-        /* Adjust size as needed */
-    }
-
-    .image2 {
-        position: absolute;
-        top: 74px;
-        right: 21px;
-        transform: translate(0, -50%);
-        width: 150px;
-        /* Adjust size as needed */
-        height: 150px;
-        /* Adjust size as needed */
-    }
-
-    .image3 {
-        position: absolute;
-        bottom: -26px;
-        right: 207px;
-        width: 150px;
-        height: 150px;
-    }
 
 }

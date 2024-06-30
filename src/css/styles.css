@@ -37,3 +37,20 @@ body {
     --weight-600: 600;
     --weight-800: 800;
 }
+
+/* ====== check ======= */
+.header,
+.side-nav,
+.main {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: wheat;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    background-color: blueviolet;
+}
