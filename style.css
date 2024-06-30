@@ -40,11 +40,11 @@ body {
 
 /* ======== body ======== */
 body {
-    background-image: url("./public/images/loginBg.png");
-    /* background-color: var(--bg-color); */
-    background-repeat: no-repeat;
+    /* background-image: url("./public/images/loginBg.png"); */
+    background-color: hsl(211, 86%, 48%);
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     height: 100vh;
 }
 
@@ -72,13 +72,18 @@ body {
     width: 100% !important;
     height: 100% !important;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: white;
     /* backdrop-filter: blur(50px); */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.684);
     display: flex;
     justify-content: center;
 }
 
+.userinput,
+.userPass {
+    border: 1.5px solid var(--border-color);
+
+}
 
 
 /* ======= Login Heading ======== */
@@ -103,22 +108,8 @@ body {
 }
 
 /* =======button ======== */
-.btn-color {
-    color: var(--first-color-dark);
-    background-color: var(--border-color);
-}
-
-.btn-color:hover {
-    border: 1px solid var(--border-color);
-    color: white;
-}
 
 /* ====== Login btn a======= */
-.btn-color a {
-    text-decoration: none;
-    color: var(--white);
-}
-
 .btn-primary a {
     text-decoration: none;
     color: var(--white);
