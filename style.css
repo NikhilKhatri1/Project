@@ -11,7 +11,7 @@ body {
     --header-height: 3.5rem;
 
     /* =====color===== */
-    --bg-color: hsla(211, 86%, 48%, 0.014);
+    --bg-color: hsl(211, 86%, 48%);
     --first-color: hsl(253, 52%, 53%);
     --first-color-dark: hsl(256, 81%, 45%);
     --first-color-light: hsl(251, 78%, 73%);
@@ -65,7 +65,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60%;
+    margin-left: 55%;
 }
 
 .row-container {
@@ -77,6 +77,30 @@ body {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.684);
     display: flex;
     justify-content: center;
+    margin-right: 20px;
+}
+
+/* ===== image container ====== */
+.img-container {
+    position: relative;
+    width: 40%;
+    height: 20%;
+}
+
+.img-container img {
+    position: absolute;
+    top: -90px;
+    right: 334px;
+}
+
+@media (max-width:450px) {
+    .img-container {
+        display: none;
+    }
+
+    .img-container img {
+        display: none;
+    }
 }
 
 .userinput,
@@ -155,12 +179,14 @@ body {
     .row-container {
         background-color: rgba(255, 255, 255, 0.473);
         backdrop-filter: none;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .container {
         height: 76%;
         width: 95%;
-        margin-left: 10px;
+        margin-left: 9px;
     }
 
     /* ======= Login Heading ======== */
