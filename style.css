@@ -46,7 +46,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .main {
@@ -175,7 +175,7 @@ body {
         background-position: center;
         display: flex;
         align-items: center;
-        height: 100vh;
+        height: 100vh !important;
     }
 
     /* ====== login container ======== */
