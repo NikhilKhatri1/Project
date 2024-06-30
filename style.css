@@ -46,7 +46,6 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    overflow: hidden;
 }
 
 .main {
@@ -168,11 +167,17 @@ body {
 /* ======== for Mobile ========== */
 
 @media (max-width: 450px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
     body {
         background-image: url("./public/images/loginBgsm.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        background-color: var(--bg-color);
         display: flex;
         align-items: center;
         height: 100vh !important;
@@ -186,7 +191,7 @@ body {
     }
 
     .container {
-        height: 80%;
+        height: 76%;
         width: 95%;
     }
 
