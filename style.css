@@ -169,7 +169,7 @@ body {
 @media (max-width: 450px) {
 
     * {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     body {
@@ -212,7 +212,7 @@ body {
     .col-2 {
         color: var(--first-color-dark);
         border-radius: 0% 0% 4.3% 4.3%;
-        height: calc(100% - 150px);
+        height: auto;
         /* border: 1px solid black; */
         backdrop-filter: none;
         margin-top: -1px;
