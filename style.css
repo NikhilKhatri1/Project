@@ -11,7 +11,7 @@ body {
     --header-height: 3.5rem;
 
     /* =====color===== */
-    --bg-color: hsl(211, 93, 52);
+    --bg-color: hsla(211, 86%, 48%, 0.014);
     --first-color: hsl(253, 52%, 53%);
     --first-color-dark: hsl(256, 81%, 45%);
     --first-color-light: hsl(251, 78%, 73%);
@@ -111,6 +111,11 @@ body {
 
 /* ====== Login btn a======= */
 .btn-primary a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.btn-success a {
     text-decoration: none;
     color: var(--white);
 }
