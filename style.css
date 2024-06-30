@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 :root {
@@ -54,6 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* ======= Login Container ========== */
@@ -172,8 +174,6 @@ body {
         background-size: cover;
         background-position: center;
         height: 100vh;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
 
     /* ====== login container ======== */
